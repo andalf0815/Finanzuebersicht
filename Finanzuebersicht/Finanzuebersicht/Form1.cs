@@ -19,12 +19,14 @@ namespace Finanzuebersicht
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            for (int i = 0; i < 5; i++)
+            Left = 25;
+            Top = 25;
+            for (int i = 0; i < 10; i++)
             {
                 Button button = new Button();
                 button.Left = Left;
                 button.Top = Top;
-                this.Controls.Add(button);
+                panel_items.Controls.Add(button);
                 Top += button.Height + 2;
             }
         }

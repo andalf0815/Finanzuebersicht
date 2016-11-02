@@ -28,13 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+            this.panel_items = new System.Windows.Forms.Panel();
             this.SuspendLayout();
+            // 
+            // panel_items
+            // 
+            this.panel_items.AutoScroll = true;
+            this.panel_items.Location = new System.Drawing.Point(12, 12);
+            this.panel_items.Name = "panel_items";
+            this.panel_items.Size = new System.Drawing.Size(407, 437);
+            this.panel_items.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(884, 461);
+            this.Controls.Add(this.panel_items);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Startseite";
@@ -44,6 +54,9 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.HelpProvider helpProvider1;
+        private System.Windows.Forms.Panel panel_items;
     }
 }
 

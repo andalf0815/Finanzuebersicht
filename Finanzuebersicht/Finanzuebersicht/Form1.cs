@@ -16,5 +16,17 @@ namespace Finanzuebersicht
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Button button = new Button();
+                button.Left = Left;
+                button.Top = Top;
+                this.Controls.Add(button);
+                Top += button.Height + 2;
+            }
+        }
     }
 }
